@@ -1,7 +1,7 @@
 Kubernetes Installation 
 	Minimum requirement for K8S master node is (2-core CPU and 2GB Ram)
 	
-	1. sudo apt update 
+	1. sudo apt update
 	2. sudo apt-get install -y apt-transport-https
 	3. sudo su -
 	4. curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add
