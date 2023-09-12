@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ip-app-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: ip-app
+  template:
+    metadata:
+      labels:
+        app: ip-app
+    spec:
+      containers:
+      - name: ip-app
+        image: harshajain/ip-app:2
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        env:
+        - name: ENVIRONMENT
+          valueFrom:
+              configMapKeyRef:
+                  name: my-vol-cm
+                  key: env
+        - name: APP
+          valueFrom:
+              configMapKeyRef:
+                  name: my-vol-cm
+                  key: app
