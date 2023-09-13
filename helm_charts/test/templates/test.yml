@@ -1,2 +1,2 @@
 employee:
-name: {{ .Values.myname |  indent 4 | quote }}
+name: {{ .Values.myname |  indent 4  }}
