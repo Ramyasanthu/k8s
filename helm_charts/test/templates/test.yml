@@ -1,2 +1,2 @@
 employee:
-name: {{ .Values.myname |  nindent 4 | quota | upper }}
+name: {{ .Values.myname |  nindent 4 | quote | upper }}
