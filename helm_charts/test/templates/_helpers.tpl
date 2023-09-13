@@ -1,4 +1,4 @@
-{{/*
+/* {{/*
 Expand the name of the chart.
 */}}
 {{- define "test.name" -}}
@@ -59,7 +59,7 @@ Create the name of the service account to use
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
-{{- end }}
+{{- end }} */
 {{- define "test.labels" -}}
 app: nginx-{{ randNumeric 4}}
 {{- end}}
