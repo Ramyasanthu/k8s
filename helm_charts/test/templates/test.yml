@@ -1,2 +1,3 @@
 employee:
 name: {{ .Values.myname |  trim | quote -}}
+name:  {{- repaet 3 "hello"}}
