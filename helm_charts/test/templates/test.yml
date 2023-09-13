@@ -1,4 +1,4 @@
 employee:
 #name: {{ .Values.myname |  trim | quote -}}
 #name:  {{- repeat 3 "hello" -}}
-name: {{ randNumeric}}
+name: {{ randNumeric 3 }}
