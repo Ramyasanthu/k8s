@@ -1,1 +1,1 @@
-name : {{.values.myname}}
+name : {{ .values.myname }}
