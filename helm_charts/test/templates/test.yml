@@ -10,7 +10,7 @@ containers:
 sprec:
    containers:
    {{- with .Values.mycontainer1 }}
-   - name: {{ .name}}
+   - name: {{ $.Values.name}}
      image: {{ .image}}
      ports:
      - containerPort: {{ .containerPort}}
