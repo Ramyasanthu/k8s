@@ -9,4 +9,4 @@ containers:
 
 sprec:
    containers:
-   {{- include "test.container" . | indent 4 }} 
+   {{- include "test.container" .  }} 

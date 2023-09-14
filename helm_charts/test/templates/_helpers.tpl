@@ -4,8 +4,8 @@ app: nginx-{{ randNumeric 4}}
 
 {{- define "test.container" -}}
 {{- with .Values.mycontainer1 -}}
-name: {{ .name}}
-image: {{ .image}}
+name: {{ .name | indent 4 }}
+image: {{ .image | indent 4 }}
 ports:
      containerPort:
      {{- range .containerPort }}
