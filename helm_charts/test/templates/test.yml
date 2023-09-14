@@ -1,6 +1,8 @@
 employee:
-#name1: {{ .Values.myname |  trim | quote -}}
-#name2:  {{- repeat 3 "hello" -}}
-name3: {{ randNumeric 3 }}
+   #name1: {{ .Values.myname |  trim | quote -}}
+   #name2:  {{- repeat 3 "hello" -}}
+   name3: {{ randNumeric 3 }}
 label:
       {{ include "test.labels" .}}
+containers:
+{{ include "test.container" }}      
