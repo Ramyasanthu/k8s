@@ -5,4 +5,4 @@ employee:
 label:
       {{ include "test.labels" .}}
 containers:
-{{ include "test.container" }}      
+{{ include "test.container" . }}      
