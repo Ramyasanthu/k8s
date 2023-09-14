@@ -10,7 +10,7 @@ containers:
 sprec:
    containers:
    {{- if .Values.enable_jenkins -}}
-   {{- include "test.mycontainer1" .  }}
+   {{- include "test.container1" .  }}
    {{- else -}}
-   {{- include "test.mycontainer2" . }}
+   {{- include "test.container2" . }}
    {{ end }} 
