@@ -14,4 +14,4 @@ mycontainer2:
     name: ip-app
     image: harshajain/ip_app:2
     containerPort: 
-      -80
+      - 80
