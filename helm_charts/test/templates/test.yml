@@ -3,6 +3,6 @@ employee:
    #name2:  {{- repeat 3 "hello" -}}
    name3: {{ randNumeric 3 }}
 label:
-      {{ include "test.labels" .}}
+      {{ include "test.labels" . | nindent 8 }}
 containers:
 {{ include "test.container" . }}      
