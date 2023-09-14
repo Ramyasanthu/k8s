@@ -1,6 +1,6 @@
 myname : Ramya
 name: root_name
-enable_jenkins: true
+enable_jenkins: false
 mycontainer1:
     name: jenkins
     image: jenkins/jenkins:lts
