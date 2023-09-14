@@ -1,1 +1,11 @@
 myname : Ramya
+
+mycontainer1:
+    name: nginx
+    image: nginx
+    containerport: 80
+
+mycontainer2:
+    name: ip-app
+    image: harshajain/ip-app:2
+    containerPort: 8080

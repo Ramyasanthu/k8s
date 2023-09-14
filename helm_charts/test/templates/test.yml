@@ -5,4 +5,11 @@ employee:
 label:
       {{ include "test.labels" . | nindent 8 }}
 containers:
-{{ include "test.container" . }}      
+{{ include "test.container" . }}  
+
+sprec:
+   containers:
+   - name: {{ .Values.mycontainer1.name}}
+     image: {{ .Values.mycontainer2.image}}
+     ports:
+     - containerPort: {{ .Values.mycontainer1.containerPort}}
