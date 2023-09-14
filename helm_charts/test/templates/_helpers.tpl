@@ -3,7 +3,7 @@ app: nginx-{{ randNumeric 4}}
 {{- end}}
 
 {{- define "test.container" -}}
-{{- with .Values.mycontainers -}}
+{{- with .Values.mycontainer -}}
 name: {{ .name }}
 image: {{ .image  }}
 ports:
