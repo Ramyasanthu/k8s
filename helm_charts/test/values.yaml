@@ -1,11 +1,14 @@
 myname : Ramya
 name: root_name
+enable_jenkins: true
 mycontainer1:
-    name: nginx
-    image: nginx
-    containerport: 80
+    name: jenkins
+    image: jenkins/jenkins:lts
+    containerport: 
+      - 8080
+      - 50000
 
 mycontainer2:
     name: ip-app
     image: harshajain/ip-app:2
-    containerPort: 8080
+    containerPort: 80
