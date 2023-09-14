@@ -12,4 +12,5 @@ sprec:
    {{- if .Values.enable_jenkins -}}
    {{- include "test.container" .  }}
    {{- else -}}
+   {{- include "test.container" . }}
    {{ end }} 
