@@ -10,9 +10,4 @@ containers:
 sprec:
    containers:
    {{- include "test.container" . }}
-   {{- with .Values.mycontainer1 }}
-   - name: {{ $.Values.name}}
-     image: {{ .image}}
-     ports:
-     - containerPort: {{ .containerPort}}
-     {{- end}}
+   
